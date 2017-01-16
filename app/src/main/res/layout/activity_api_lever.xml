@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/activity_base_top_layout"
+        android:id="@+id/top_bar"
+        ></include>
+
+    <ScrollView
+        android:layout_below="@id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="拨打电话权限"
+                android:onClick="onclick"
+                />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="访问SD卡权限"
+                android:onClick="onclick"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
